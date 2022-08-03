@@ -1,0 +1,48 @@
+header{
+    box-shadow:0 2px 5px #dbdbdb;
+    display:flex;
+    justify-content:space-between;
+    padding: 12px 15px;
+}
+header>img{
+    width: 90px;
+}
+header>div{
+    cursor:pointer;
+}
+.wrapper_right_header{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-right: 15px;
+    align-items: center;
+}
+.spacing{
+    margin:0px 20px
+}
+
+.donar{
+    border-radius:var(--global-radius);
+    border-width: 1px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0.35rem 0.2rem 0.15rem 0;
+    padding: 0.075rem 0.3rem;
+    background-color: var(--global-primary-color);
+    border-color: var(--global-primary-color);
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+.donar:hover{
+    color:var(--global-primary-color);
+    border-radius:var(--global-radius);
+    border:1px solid var(--global-primary-color);
+    background-color: white;
+}
+.close{
+    color: red;
+}
+.pointer{
+    cursor: pointer;
+}

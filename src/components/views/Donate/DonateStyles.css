@@ -1,0 +1,6 @@
+#donate{
+    padding: 20px 15px 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
