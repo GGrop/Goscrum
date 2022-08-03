@@ -24,7 +24,7 @@ export const Header = () => {
             <h4 className="pointer" onClick={()=>navigate("/", {replace:true})}>Go Scrum</h4>
             <div className="wrapper_right_header">
                 <button className="donar" onClick={()=>navigate("/donate", {replace:true})}>Donar!</button>
-                <div className="spacing">Tareas creadas:{tasks.length}</div>
+                <div className="spacing">Tareas creadas:{tasks?.length}</div>
                 <div>{localStorage.getItem("userName")}</div>
                 <div onClick={handleLogout} className="close">x</div>
             </div>
