@@ -9,7 +9,7 @@ import {store} from './store/store'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="Goscrum">
     <Provider store={store}>
       <App/>
     </Provider>
