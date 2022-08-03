@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Goscrum/static/css/main.30f65bd6.css",
+    "main.js": "/Goscrum/static/js/main.a756810f.js",
+    "index.html": "/Goscrum/index.html",
+    "main.30f65bd6.css.map": "/Goscrum/static/css/main.30f65bd6.css.map",
+    "main.a756810f.js.map": "/Goscrum/static/js/main.a756810f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30f65bd6.css",
+    "static/js/main.a756810f.js"
+  ]
+}
