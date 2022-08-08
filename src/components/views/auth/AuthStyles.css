@@ -69,7 +69,7 @@
 
 
 
-@media screen and (min-width: 600px) and (max-width: 800px){
+@media screen and (min-width: 600px){
     .auth{
         background-color: var(--global-bg-color-soft);
     }
@@ -80,5 +80,4 @@
         box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
         background-color: white;
     }
-
 }
