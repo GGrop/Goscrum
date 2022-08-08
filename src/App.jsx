@@ -9,7 +9,6 @@ import {Route, Routes, Navigate, useLocation} from 'react-router-dom'
 import {AnimatePresence, motion} from 'framer-motion'
 import { Registered } from './components/views/Registered/Registered';
 import { Donate } from './components/views/Donate/Donate';
-import { Header } from './components/Header/Header';
 
 const RequireAuth=({children})=>{
     if(!localStorage.getItem('token')){
