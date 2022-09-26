@@ -13,6 +13,7 @@ import {Radio,RadioGroup,FormControlLabel,FormControl} from '@mui/material';
 
 import {useSelector, useDispatch} from "react-redux"
 import {getTasks,deleteTask,editTaskStatus} from "../../../store/actions/tasksActions"
+import { Registered } from '../Registered/Registered'
 
 
 export const Tasks = () => {
@@ -99,6 +100,7 @@ export const Tasks = () => {
   return (
     <>
       <Header/>
+      <Registered/>
       <main id="tasks">
         <TaskForm/>
         <section className='wrapper_list'>

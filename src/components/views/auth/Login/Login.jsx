@@ -46,11 +46,13 @@ export const Login = () => {
             if(data.status_code === 200) {
                 localStorage.setItem("token", data?.result?.token)
                 localStorage.setItem("userName", data?.result?.user.userName)
-                navigate("/", {replace:true})
+                localStorage.setItem("teamID", data?.result?.user.teamID)
+                navigate("/"+ data?.result.user.teamID, {
+                    replace:true,
+                })
             }else{
                 swal()
             }
-            // localStorage.setItem("token", data.result.token)
         })
     }
 

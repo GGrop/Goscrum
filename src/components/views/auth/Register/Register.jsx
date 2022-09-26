@@ -21,7 +21,6 @@ export const Register = () => {
         .then(data=>setData(data.result)))
     },[])
 
-    // console.log({data})
 
     const initialValues={
         userName:"",
@@ -74,12 +73,9 @@ export const Register = () => {
             }),
         }).then(response=>response.json())
         .then(data=>
-            navigate("/registered/"+ data?.result.user.teamID, {
-                replace:true,
-            })
+            navigate("/login",{replace:true,})
         )
     };
-    
     const formik = useFormik({ initialValues,validationSchema, onSubmit})
     
     const {

@@ -1,14 +1,12 @@
-import './App.css';
-
 import { Login } from './components/views/auth/Login/Login';
 import { Register } from './components/views/auth/Register/Register';
 import { Error404 } from './components/views/Error404/Error404';
 import {Tasks } from './components/views/Tasks/Tasks'
+import { Registered } from './components/views/Registered/Registered';
+import { Donate } from './components/views/Donate/Donate';
 
 import {Route, Routes, Navigate, useLocation} from 'react-router-dom'
 import {AnimatePresence, motion} from 'framer-motion'
-import { Registered } from './components/views/Registered/Registered';
-import { Donate } from './components/views/Donate/Donate';
 
 const RequireAuth=({children})=>{
     if(!localStorage.getItem('token')){
@@ -34,7 +32,7 @@ export const App=()=>{
             <AnimatePresence>
             <Routes location={location} key={location.pathname}>
             <Route
-                path="/"
+                path="/:teamID"
                 element={
                 <motion.div
                     className='page'
@@ -49,7 +47,6 @@ export const App=()=>{
                 </motion.div>
                 }
             />
-            {/* <Route path="/" element={<RequireAuth><Tasks/></RequireAuth>}/> */}
             <Route
                 path="/login"
                 element={
@@ -120,7 +117,6 @@ export const App=()=>{
                 </motion.div>
                 }
             />
-            {/* <Route path="/*" element={<Error404/>}/> */}
         </Routes>
         </AnimatePresence>
         </>
