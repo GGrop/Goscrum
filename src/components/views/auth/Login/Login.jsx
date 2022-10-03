@@ -47,7 +47,7 @@ export const Login = () => {
                 localStorage.setItem("token", data?.result?.token)
                 localStorage.setItem("userName", data?.result?.user.userName)
                 localStorage.setItem("teamID", data?.result?.user.teamID)
-                navigate("/"+ data?.result.user.teamID, {
+                navigate("/", {
                     replace:true,
                 })
             }else{

@@ -32,7 +32,7 @@ export const App=()=>{
             <AnimatePresence>
             <Routes location={location} key={location.pathname}>
             <Route
-                path="/:teamID"
+                path="/"
                 element={
                 <motion.div
                     className='page'
@@ -114,6 +114,7 @@ export const App=()=>{
                     variants={pageTransition}
                 >
                     <Error404/>
+                    {/* <Login/> */}
                 </motion.div>
                 }
             />
