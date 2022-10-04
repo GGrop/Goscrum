@@ -14,6 +14,7 @@ import {Radio,RadioGroup,FormControlLabel,FormControl} from '@mui/material';
 import {useSelector, useDispatch} from "react-redux"
 import {getTasks,deleteTask,editTaskStatus} from "../../../store/actions/tasksActions"
 import { Registered } from '../Registered/Registered'
+import { blue, pink } from '@mui/material/colors'
 
 
 export const Tasks = () => {
@@ -96,7 +97,7 @@ export const Tasks = () => {
   const handleDelete=(id)=> dispatch(deleteTask(id))
 
   const handleEditCardStatus=(data)=>dispatch(editTaskStatus(data))
-
+  console.log(loading)
   return (
     <>
       <Header/>
@@ -159,9 +160,9 @@ export const Tasks = () => {
               <div>No hay Tareas Creadas</div>
             ):loading?(
               <>
-                <Skeleton height={90}/>
-                <Skeleton height={90}/>
-                <Skeleton height={90}/>
+                <Skeleton height={180} width={280} padding={10}/>
+                <Skeleton height={180} width={280} padding={10}/>
+                <Skeleton height={180} width={280} padding={10}/>
               </>
             ):(
               <>
