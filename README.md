@@ -1,6 +1,8 @@
 ![img](https://i.imgur.com/cApfTPl.png)
 # Go Scrum
 
+Go Scrum is a To-do Task demo, I learned much about libraries like skeleton, form with formik and validation with Yup.
+
 
  #### Click here 👉🏻 [Demo](https://ggrop.github.io/Goscrum/)
 
